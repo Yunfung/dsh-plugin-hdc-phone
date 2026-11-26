@@ -1,14 +1,14 @@
 {
   "name": "dsh-plugin-hdc-phone",
-  "description": "Drive a second HarmonyOS phone through the on-device hdc bridge: observe/tap/swipe/key/input/launch.",
+  "description": "Drive a second phone through a local HTTP hdc bridge (HdcBridge / DSH NEXT): observe/tap/swipe/key/input/launch, with configurable bridge host/port.",
   "dist-tags": {
-    "latest": "0.3.0"
+    "latest": "0.3.1"
   },
   "versions": {
-    "0.3.0": {
+    "0.3.1": {
       "name": "dsh-plugin-hdc-phone",
-      "version": "0.3.0",
-      "description": "Drive a second HarmonyOS phone through the on-device hdc bridge: observe/tap/swipe/key/input/launch.",
+      "version": "0.3.1",
+      "description": "Drive a second phone through a local HTTP hdc bridge (HdcBridge / DSH NEXT): observe/tap/swipe/key/input/launch, with configurable bridge host/port.",
       "type": "module",
       "main": "src/index.js",
       "exports": {
@@ -16,33 +16,31 @@
         "./package.json": "./package.json"
       },
       "files": [
-        "src/index.js",
+        "src",
         "cordis.patch.yml",
-        "README.md"
+        "README.md",
+        "LICENSE"
       ],
       "keywords": [
-        "dsh",
         "dsh-plugin",
+        "dsh",
         "deepseek-harness",
-        "cordis",
+        "cordis-plugin",
         "harmonyos",
+        "openharmony",
         "hdc",
         "phone",
-        "automation"
+        "remote-control"
       ],
       "license": "MIT",
       "engines": {
         "node": ">=24.9.0"
       },
       "peerDependencies": {
-        "@deepseek-ai/dsh-tools": ">=0.2.1-alpha.1 <0.3.0-0",
-        "@deepseek-ai/schemastery": ">=3.18.5-alpha.1 <4.0.0-0"
+        "@deepseek-ai/dsh-tools": ">=0.1.0-rc.1 <0.2.0-0 || >=0.2.0-rc.1 <0.3.0-0"
       },
       "peerDependenciesMeta": {
         "@deepseek-ai/dsh-tools": {
-          "optional": true
-        },
-        "@deepseek-ai/schemastery": {
           "optional": true
         }
       },
@@ -50,18 +48,20 @@
         "bundle": {
           "patch": "./cordis.patch.yml"
         },
-        "manifestVersion": 1
+        "engines": {
+          "dsh": ">=0.2.0-rc.1"
+        }
       },
       "dist": {
-        "tarball": "http://127.0.0.1:18792/registry/dsh-plugin-hdc-phone/-/dsh-plugin-hdc-phone-0.3.0.tgz",
-        "shasum": "10dde70f00b05f900ba002ee0ab5c73bac8e44db",
-        "integrity": "sha512-YNsbcfL1PsfOrbc5Y17YQjA9UMIfrzzLpEbKIQnn7RlKW8lVT2uoHAJ+bWKlS27w4YFSiaJ4htHIcYiiPh8+5g=="
+        "tarball": "http://127.0.0.1:18792/registry/dsh-plugin-hdc-phone/-/dsh-plugin-hdc-phone-0.3.1.tgz",
+        "shasum": "ec04a8dc4ffe0c3b34d33949a58f1695a70e505e",
+        "integrity": "sha512-gv1Ef8D/DcMl7o37MYJ0yWCvsPU8udBclosOwlw7blTve1axFdku9uewhUNe9XE2Hjf5rGbMq3aHeMpokq/Q5g=="
       }
     }
   },
   "time": {
-    "created": "2026-11-26T01:35:57.000Z",
-    "modified": "2026-11-26T01:35:57.000Z",
-    "0.3.0": "2026-11-26T01:35:57.000Z"
+    "created": "2026-11-26T03:19:45.000Z",
+    "modified": "2026-11-26T03:19:45.000Z",
+    "0.3.1": "2026-11-26T03:19:45.000Z"
   }
 }

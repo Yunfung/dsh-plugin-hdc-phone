@@ -64,7 +64,7 @@ tarball 在磁盘上存放在 `public/registry/tarballs/`，由服务按 npm 约
 ```powershell
 cd <任意空目录>
 "registry=http://127.0.0.1:18792/registry/`nauto-install-peers=false" | Set-Content .npmrc -Encoding ascii
-& $NODE $PNPM add dsh-plugin-hdc-phone@0.3.0
+& $NODE $PNPM add dsh-plugin-hdc-phone@0.3.1
 ```
 
 装完 `node_modules/dsh-plugin-hdc-phone` 里应当只有 `package.json`、`cordis.patch.yml`、`README.md`、`src/index.js`（`files` 白名单控制）。

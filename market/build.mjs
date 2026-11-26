@@ -101,7 +101,7 @@ const index = {
         en: 'Drive a second HarmonyOS phone through the on-device hdc bridge: observe, tap, swipe, key, input, launch. Needs the HdcDsh app bridge (hdc fport to reach it from a PC).',
         zh: '通过设备端 hdc 桥驱动第二台 HarmonyOS 手机：观察、点击、滑动、按键、输入、拉起应用。需要 HdcDsh App 的桥（从 PC 用 hdc fport 转发）。',
       },
-      author: 'fengy',
+      author: typeof pkg.author === 'string' ? pkg.author : 'fengy',
       metadata: {
         category: 'remote',
         keywords: pkg.keywords,
@@ -113,7 +113,7 @@ const index = {
           version: pkg.version,
           publishTimestamp: published,
           source: { type: 'npm', registry: registryUrl },
-          engines: { dsh: '>=0.2.1-alpha.1 <0.3.0-0' },
+          engines: { dsh: pkg.dsh?.engines?.dsh ?? '>=0.2.1-alpha.1 <0.3.0-0' },
         },
       ],
     },

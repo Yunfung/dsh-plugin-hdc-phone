@@ -64,36 +64,37 @@
         "en": "Drive a second HarmonyOS phone through the on-device hdc bridge: observe, tap, swipe, key, input, launch. Needs the HdcDsh app bridge (hdc fport to reach it from a PC).",
         "zh": "通过设备端 hdc 桥驱动第二台 HarmonyOS 手机：观察、点击、滑动、按键、输入、拉起应用。需要 HdcDsh App 的桥（从 PC 用 hdc fport 转发）。"
       },
-      "author": "fengy",
+      "author": "moyuge123",
       "metadata": {
         "category": "remote",
         "keywords": [
-          "dsh",
           "dsh-plugin",
+          "dsh",
           "deepseek-harness",
-          "cordis",
+          "cordis-plugin",
           "harmonyos",
+          "openharmony",
           "hdc",
           "phone",
-          "automation"
+          "remote-control"
         ],
         "labels": [
           "network"
         ],
         "sortKeys": {
-          "added": 1795656957
+          "added": 1795663185
         }
       },
       "versions": [
         {
-          "version": "0.3.0",
-          "publishTimestamp": 1795656957,
+          "version": "0.3.1",
+          "publishTimestamp": 1795663185,
           "source": {
             "type": "npm",
             "registry": "http://127.0.0.1:18792/registry/"
           },
           "engines": {
-            "dsh": ">=0.2.1-alpha.1 <0.3.0-0"
+            "dsh": ">=0.2.0-rc.1"
           }
         }
       ]
