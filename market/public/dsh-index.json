@@ -1,0 +1,102 @@
+{
+  "format": 1,
+  "title": {
+    "en": "HdcDsh local plugins",
+    "zh": "HdcDsh 本地插件"
+  },
+  "description": {
+    "en": "Plugins built inside this HdcDsh checkout, served from 127.0.0.1.",
+    "zh": "本仓库内构建、由 127.0.0.1 提供的插件。"
+  },
+  "metadata": {
+    "categories": {
+      "tools": {
+        "title": {
+          "en": "Tools",
+          "zh": "工具"
+        }
+      },
+      "remote": {
+        "title": {
+          "en": "Remote control",
+          "zh": "远程控制"
+        }
+      },
+      "dev": {
+        "title": {
+          "en": "Development",
+          "zh": "开发"
+        }
+      }
+    },
+    "labels": {
+      "network": {
+        "title": {
+          "en": "Network",
+          "zh": "网络"
+        }
+      },
+      "host-runtime": {
+        "title": {
+          "en": "Host runtime",
+          "zh": "宿主运行时"
+        }
+      }
+    },
+    "sortKeys": {
+      "added": {
+        "title": {
+          "en": "Added",
+          "zh": "加入时间"
+        },
+        "order": "desc"
+      }
+    }
+  },
+  "plugins": [
+    {
+      "name": "dsh-plugin-hdc-phone",
+      "title": {
+        "en": "HDC phone",
+        "zh": "HDC 手机操控"
+      },
+      "description": {
+        "en": "Drive a second HarmonyOS phone through the on-device hdc bridge: observe, tap, swipe, key, input, launch. Needs the HdcDsh app bridge (hdc fport to reach it from a PC).",
+        "zh": "通过设备端 hdc 桥驱动第二台 HarmonyOS 手机：观察、点击、滑动、按键、输入、拉起应用。需要 HdcDsh App 的桥（从 PC 用 hdc fport 转发）。"
+      },
+      "author": "fengy",
+      "metadata": {
+        "category": "remote",
+        "keywords": [
+          "dsh",
+          "dsh-plugin",
+          "deepseek-harness",
+          "cordis",
+          "harmonyos",
+          "hdc",
+          "phone",
+          "automation"
+        ],
+        "labels": [
+          "network"
+        ],
+        "sortKeys": {
+          "added": 1795656957
+        }
+      },
+      "versions": [
+        {
+          "version": "0.3.0",
+          "publishTimestamp": 1795656957,
+          "source": {
+            "type": "npm",
+            "registry": "http://127.0.0.1:18792/registry/"
+          },
+          "engines": {
+            "dsh": ">=0.2.1-alpha.1 <0.3.0-0"
+          }
+        }
+      ]
+    }
+  ]
+}

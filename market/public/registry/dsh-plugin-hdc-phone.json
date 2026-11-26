@@ -1,0 +1,67 @@
+{
+  "name": "dsh-plugin-hdc-phone",
+  "description": "Drive a second HarmonyOS phone through the on-device hdc bridge: observe/tap/swipe/key/input/launch.",
+  "dist-tags": {
+    "latest": "0.3.0"
+  },
+  "versions": {
+    "0.3.0": {
+      "name": "dsh-plugin-hdc-phone",
+      "version": "0.3.0",
+      "description": "Drive a second HarmonyOS phone through the on-device hdc bridge: observe/tap/swipe/key/input/launch.",
+      "type": "module",
+      "main": "src/index.js",
+      "exports": {
+        ".": "./src/index.js",
+        "./package.json": "./package.json"
+      },
+      "files": [
+        "src/index.js",
+        "cordis.patch.yml",
+        "README.md"
+      ],
+      "keywords": [
+        "dsh",
+        "dsh-plugin",
+        "deepseek-harness",
+        "cordis",
+        "harmonyos",
+        "hdc",
+        "phone",
+        "automation"
+      ],
+      "license": "MIT",
+      "engines": {
+        "node": ">=24.9.0"
+      },
+      "peerDependencies": {
+        "@deepseek-ai/dsh-tools": ">=0.2.1-alpha.1 <0.3.0-0",
+        "@deepseek-ai/schemastery": ">=3.18.5-alpha.1 <4.0.0-0"
+      },
+      "peerDependenciesMeta": {
+        "@deepseek-ai/dsh-tools": {
+          "optional": true
+        },
+        "@deepseek-ai/schemastery": {
+          "optional": true
+        }
+      },
+      "dsh": {
+        "bundle": {
+          "patch": "./cordis.patch.yml"
+        },
+        "manifestVersion": 1
+      },
+      "dist": {
+        "tarball": "http://127.0.0.1:18792/registry/dsh-plugin-hdc-phone/-/dsh-plugin-hdc-phone-0.3.0.tgz",
+        "shasum": "10dde70f00b05f900ba002ee0ab5c73bac8e44db",
+        "integrity": "sha512-YNsbcfL1PsfOrbc5Y17YQjA9UMIfrzzLpEbKIQnn7RlKW8lVT2uoHAJ+bWKlS27w4YFSiaJ4htHIcYiiPh8+5g=="
+      }
+    }
+  },
+  "time": {
+    "created": "2026-11-26T01:35:57.000Z",
+    "modified": "2026-11-26T01:35:57.000Z",
+    "0.3.0": "2026-11-26T01:35:57.000Z"
+  }
+}

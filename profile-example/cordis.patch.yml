@@ -1,0 +1,29 @@
+# Minimal patch that mounts dsh-plugin-hdc-phone into a profile.
+#
+# Copy this profile to `$DSH_HOME/profiles/hdc-phone/`, or append the `insert`
+# row below to an existing profile's cordis.patch.yml (for example the `web`
+# profile, so the tools show up in the DSH Web UI).
+#
+# `name` is either the installed package name (`dsh-plugin-hdc-phone`, after
+# `dsh plugin --profile <profile> add ...`) or an absolute path to
+# `src/index.js` for an unreleased local checkout (shown here).
+#
+# The plugin is bridge-only: it talks to the JSON-over-HTTP bridge that the
+# HdcDsh app starts on the phone (`hdc.startBridge`). From a PC, forward the
+# port and point `config.port` at the PC side:
+#
+#   hdc fport tcp:18791 tcp:18790
+- insert:
+    - id: hdc-phone
+      name: 'C:/Users/fengy/DevEcoStudioProjects/HdcDsh/plugins/dsh-plugin-hdc-phone/src/index.js'
+      config:
+        # Bridge host. Use 127.0.0.1 with an `hdc fport` forward.
+        host: 127.0.0.1
+        # Bridge port (1-65535). Defaults to 18790; 18791 is the PC side of the
+        # `hdc fport tcp:18791 tcp:18790` example above.
+        port: 18790
+        # Per-request timeout in ms (1000-120000).
+        timeoutMs: 30000
+        # Default `max` node count for phone_observe (1-300).
+        maxNodes: 60
+        # Env `HDC_PHONE_BRIDGE=127.0.0.1:18791` overrides host/port.

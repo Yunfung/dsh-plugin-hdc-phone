@@ -1,0 +1,17 @@
+# build output
+node_modules/
+*.tgz
+dist/
+
+# local config / secrets
+.dsh-hdc-phone.json
+.env
+.env.*
+
+# editor & OS noise
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+*.log
+npm-debug.log*

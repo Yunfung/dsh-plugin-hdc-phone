@@ -1,0 +1,3 @@
+# Leaf entry list of a dsh profile. The real tree is composed from
+# `dsh.profile.bundles` in package.json plus cordis.patch.yml.
+[]

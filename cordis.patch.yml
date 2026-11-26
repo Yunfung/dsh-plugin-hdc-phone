@@ -1,0 +1,8 @@
+# dsh-plugin-hdc-phone —— DSH Bundle patch
+#
+# 作为 bundle 合入 profile 时，自动插入本插件行。
+# 插件本身通过 env（DSH_HDC_PHONE_HOST / DSH_HDC_PHONE_PORT）或
+# <DSH_HOME|HOME>/.dsh-hdc-phone.json 读取桥接地址，因此这里不需要 config。
+- insert:
+    - id: hdc-phone
+      name: dsh-plugin-hdc-phone
