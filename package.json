@@ -27,13 +27,13 @@
   ],
   "license": "MIT",
   "author": "moyuge123",
-  "homepage": "https://github.com/moyuge123/dsh-plugin-hdc-phone#readme",
+  "homepage": "https://github.com/Yunfung/dsh-plugin-hdc-phone#readme",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/moyuge123/dsh-plugin-hdc-phone.git"
+    "url": "git+https://github.com/Yunfung/dsh-plugin-hdc-phone.git"
   },
   "bugs": {
-    "url": "https://github.com/moyuge123/dsh-plugin-hdc-phone/issues"
+    "url": "https://github.com/Yunfung/dsh-plugin-hdc-phone/issues"
   },
   "engines": {
     "node": ">=24.9.0"

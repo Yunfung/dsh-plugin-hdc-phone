@@ -54,14 +54,14 @@
       },
       "dist": {
         "tarball": "http://127.0.0.1:18792/registry/dsh-plugin-hdc-phone/-/dsh-plugin-hdc-phone-0.3.1.tgz",
-        "shasum": "ec04a8dc4ffe0c3b34d33949a58f1695a70e505e",
-        "integrity": "sha512-gv1Ef8D/DcMl7o37MYJ0yWCvsPU8udBclosOwlw7blTve1axFdku9uewhUNe9XE2Hjf5rGbMq3aHeMpokq/Q5g=="
+        "shasum": "8a7d71d7c786c7a4d861cc3d245ba707452f8ea5",
+        "integrity": "sha512-rUjxts0PureDM+Cq0bm4yNE6c/9+iCxn2iTY2jBtF4jykCsefAEX43fBO7oTMmu24lhnRP45EzkYKCY8KxCc8A=="
       }
     }
   },
   "time": {
-    "created": "2026-11-26T03:19:45.000Z",
-    "modified": "2026-11-26T03:19:45.000Z",
-    "0.3.1": "2026-11-26T03:19:45.000Z"
+    "created": "2026-11-26T03:24:13.000Z",
+    "modified": "2026-11-26T03:24:13.000Z",
+    "0.3.1": "2026-11-26T03:24:13.000Z"
   }
 }
